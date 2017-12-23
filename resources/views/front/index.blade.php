@@ -27,6 +27,23 @@
 
     </section>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="card" style="padding: 2rem;">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1 class="h2">Luxury showroom located in Paris prestigious Place Vendôme.</h1>
+                        </div>
+                        <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
+                        <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
+                        <p>The high ceilings and the domotique Lutron & Deltalight lighting systems will sublimate your fashion show & collections.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section id="photos">
         <div class="text-center">
             <h2 class="h1">Photos</h2>
