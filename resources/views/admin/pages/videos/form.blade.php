@@ -60,7 +60,12 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    Path to youtube -> SHARE
+                    <ul>
+                        <li>go to youtube</li>
+                        <li>Copy the link in the button <strong>SHARE</strong></li>
+                        <li>Check this look like https://youtu.be/abcdefg</li>
+                        <li>Enter the link here</li>
+                    </ul>
                 </div>
             </div>
         </div>

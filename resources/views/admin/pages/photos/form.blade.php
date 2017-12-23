@@ -74,7 +74,17 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    Enter the title, description, order and upload file.
+                    <h1 class="h4">Every fields must to be completed</h1>
+
+                    <h2 class="h3">How to resize image or decrease size ?</h2>
+                    <ul>
+                        <li>Download <a href="https://www.designer.io/">Gravit designer</a></li>
+                        <li>New file</li>
+                        <li>Size: 800x600</li>
+                        <li>Export to format <strong>jpeg</strong></li>
+                        <li>Upload the photo here</li>
+                    </ul>
+
                 </div>
             </div>
         </div>
