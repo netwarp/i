@@ -1,0 +1,156 @@
+:root {
+	--black: #000;
+	--grey: #34495e;
+	--blue: #3498db;
+	--red: #e74c3c;
+	--silver: #bdc3c7;
+	--main-color: #2c3e50;
+	--cloud: #ecf0f1;
+}
+
+body {
+    font-family: sans-serif;
+	color: var(--black);
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	position: relative;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 999;
+	box-shadow: 1px 1px 1px #999;
+}
+
+h2, h3 {
+	color: var(--main-color) !important;
+}
+
+h2 {
+	font-weight: lighter !important;
+	padding-top: 30px;
+}
+
+header a {
+	font-size: 20px;
+	color: var(--main-color);
+	font-weight: bold;
+	font-weight: lighter;
+	transition: 0.4s ease all;
+}
+
+header a:hover {
+	transition: 0.4s ease all;
+}
+
+.card {
+	margin: 20px 0;
+}
+
+#section1 {
+	background: url('../images/landing.JPEG') no-repeat center;
+	background-size: cover;
+	height: 600px;
+	margin-bottom: 80px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#section1 h1 {
+	padding: 60px;
+}
+
+#offres .card {
+	
+}
+
+#videos {
+	margin-top: 100px;
+}
+
+#team {
+	background: var(--cloud);
+	margin-top: 150px;
+	padding-top: 40px;
+}
+
+#team .row {
+	justify-content: center;
+}
+
+#team img {
+	width: 750px;
+}
+
+#contact {
+	padding: 40px;
+}
+
+footer {
+	background: var(--black);
+	padding: 4px 0;
+	display: flex;
+	justify-content: center;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: var(--silver);
+}
+
+#full_screen {
+	position: fixed;
+	width: 600px;
+	height: 480px;
+	background: #000;
+	top: 120px;
+	left: 50%;
+	margin-left: -300px;
+	display: none;
+	z-index: 999;
+}
+
+@media screen and (max-width: 640px){
+	header {
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		box-shadow: 1px 1px 1px #fff;
+	}
+
+	header #logo {
+		text-align: center;
+	}
+
+	header nav {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header a {
+		display: block;
+	}
+
+	#contact h3 {
+		font-size: 1.2rem;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+}
