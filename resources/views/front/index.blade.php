@@ -18,7 +18,6 @@
                 <a class="nav-link" data-scroll href="">The Place</a>
                 <a class="nav-link" data-scroll href="#photos">Photos</a>
                 <a class="nav-link" data-scroll href="#videos">Videos</a>
-                <a class="nav-link" data-scroll href="#team">Team</a>
                 <a class="nav-link" data-scroll href="#contact">Contact</a>
             </nav>
         </header>
