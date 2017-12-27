@@ -118,8 +118,8 @@
     <section id="contact">
         <div class="text-center">
             <h2 class="h1">Contact</h2>
-            <div class="h4">16 Place Vendôme 75001 Paris</div>
-            <h3>q.paprocki@gmail.com</h3>
+            <div class="h4">16 Place Vendôme</div>
+            <div>75001 Paris</div>
         </div>
     </section>
 
