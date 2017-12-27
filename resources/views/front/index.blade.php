@@ -96,6 +96,7 @@
                         <div class="card-block">
                             <div><strong>Sylvain Chavry</strong>,<br> Owner</div>
                             <div>schavry@googlemail.com</div>
+                            <div>06 99 16 24 24</div>
                         </div>
                     </div>
                 </div>
@@ -106,6 +107,7 @@
                         <div class="card-block">
                             <div><strong>Quentin paprocki</strong>,<br> Family office manager</div>
                             <div>q.paprocki@googlemail.com</div>
+                            <div>06 51 85 92 09</div>
                         </div>
                     </div>
                 </div>
@@ -118,7 +120,6 @@
             <h2 class="h1">Contact</h2>
             <div class="h4">16 Place Vendôme 75001 Paris</div>
             <h3>q.paprocki@gmail.com</h3>
-            <h4>06 51 85 92 09</h4>
         </div>
     </section>
 
