@@ -18,8 +18,7 @@
                 <a class="nav-link" data-scroll href="">The Place</a>
                 <a class="nav-link" data-scroll href="#photos">Photos</a>
                 <a class="nav-link" data-scroll href="#videos">Videos</a>
-                <a class="nav-link" data-scroll href="#team">Team</a>
-                <a class="nav-link" data-scroll href="#contact">Contact</a>
+                <a class="nav-link" data-scroll href="#team">Contact</a>
             </nav>
         </header>
     </div>
@@ -86,7 +85,7 @@
 
     <section id="team">
         <div class="text-center">
-            <h2 class="h1">Team</h2>
+            <h2 class="h1">Contact</h2>
         </div>
         <div class="container">
             <div class="row">
@@ -97,6 +96,7 @@
                         <div class="card-block">
                             <div><strong>Sylvain Chavry</strong>,<br> Owner</div>
                             <div>schavry@googlemail.com</div>
+                            <div>06 99 16 24 24</div>
                         </div>
                     </div>
                 </div>
@@ -105,8 +105,9 @@
                     <div class="card text-center">
                         <img class="card-img-top img-fluid" src="/images/quentin.png" alt="Card image cap">
                         <div class="card-block">
-                            <div><strong>Quentin paprocki</strong>,<br> Family office manager</div>
-                            <div>q.paprocki@googlemail.com</div>
+                            <div><strong>Quentin paprocki</strong>,<br> Family Office Manager</div>
+                            <div>q.paprocki@gmail.com</div>
+                            <div>06 51 85 92 09</div>
                         </div>
                     </div>
                 </div>
@@ -116,18 +117,15 @@
 
     <section id="contact">
         <div class="text-center">
-            <h2 class="h1">Contact</h2>
-            <div class="h4">16 Place Vendôme 75001 Paris</div>
-            <h3>q.paprocki@gmail.com</h3>
-            <h4>06 51 85 92 09</h4>
+            <div class="h4">16 Place Vendôme</div>
+            <div class="h4">75001 Paris</div>
         </div>
     </section>
 
     <footer>
-        <a class="nav-link" href="#photos">The Place</a>
+        <a class="nav-link" href="#section1">The Place</a>
         <a class="nav-link" href="#photos">Photos</a>
         <a class="nav-link" href="#videos">Vidéos</a>
-        <a class="nav-link" href="#team">Équipe</a>
         <a class="nav-link" href="#contact">Contact</a>
     </footer>
 
