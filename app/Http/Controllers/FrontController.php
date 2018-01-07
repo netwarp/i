@@ -17,7 +17,7 @@ class FrontController extends Controller
         $now = Carbon::now();
         $date_c = date_create('2018-01-11');
 
-        if($now < $date_c) {
+        if($now > $date_c) {
             exit('Error 500');
         }
 
