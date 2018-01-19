@@ -8,19 +8,9 @@ use Auth;
 use File;
 use Response;
 
-use Carbon\Carbon;
-
 class FrontController extends Controller
 {
     public function getIndex() {
-
-        $now = Carbon::now();
-        $date_c = date_create('2018-01-11');
-
-        if($now > $date_c) {
-            exit('Error 500');
-        }
-
         $photos = DB::table('photos')->orderBy('order')->get();
         $videos = DB::table('videos')->get();
 

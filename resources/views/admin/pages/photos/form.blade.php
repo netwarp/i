@@ -80,7 +80,7 @@
                     <ul>
                         <li>Download <a href="https://www.designer.io/">Gravit designer</a></li>
                         <li>New file</li>
-                        <li>Size: 800x600</li>
+                        <li>Size: 1086 x 724</li>
                         <li>Export to format <strong>jpeg</strong></li>
                         <li>Upload the photo here</li>
                     </ul>
