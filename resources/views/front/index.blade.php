@@ -36,7 +36,7 @@
                         </div>
                         <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
                         <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
-                        <p>The high ceilings and the domotique Lutron & Deltalight lighting systems will sublimate your fashion show & collections.</p>
+                        <p>The high ceilings and the domotique Lutron & Deltalight lighting systems will sublimate your fashion shows & collections.</p>
                     </div>
                 </div>
             </div>
@@ -94,9 +94,9 @@
                     <div class="card text-center">
                         <img class="card-img-top img-fluid" src="/images/sylvain.png" alt="Card image cap">
                         <div class="card-block">
-                            <div><strong>Sylvain Chavry</strong>,<br> Owner</div>
+                            <div><strong>Sylvain Chavry</strong><br> Owner</div>
                             <div>schavry@googlemail.com</div>
-                            <div>06 99 16 24 24</div>
+                            <div>+33 6 99 16 24 24</div>
                         </div>
                     </div>
                 </div>
@@ -105,9 +105,9 @@
                     <div class="card text-center">
                         <img class="card-img-top img-fluid" src="/images/quentin.png" alt="Card image cap">
                         <div class="card-block">
-                            <div><strong>Quentin paprocki</strong>,<br> Family Office Manager</div>
+                            <div><strong>Quentin Paprocki</strong><br> Family Office Manager</div>
                             <div>q.paprocki@gmail.com</div>
-                            <div>06 51 85 92 09</div>
+                            <div>+33 6 51 85 92 09</div>
                         </div>
                     </div>
                 </div>
