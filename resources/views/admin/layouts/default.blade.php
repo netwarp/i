@@ -36,6 +36,12 @@
                             <span class="nav-link-text">Videos</span>
                         </a>
                     </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Videos">
+                        <a class="nav-link" href="{{ action('Admin\SettingController@getIndex') }}">
+                            <i class="fa fa-fw fa-gear"></i>
+                            <span class="nav-link-text">Setting</span>
+                        </a>
+                    </li>
                 </ul>
 
                 <ul class="navbar-nav ml-auto">

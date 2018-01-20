@@ -27,5 +27,8 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
         'photos' => 'PhotosController',
         'videos' => 'VideosController'
     ]);
+
+    Route::get('setting', ['as' => 'setting.index', 'uses' => 'SettingController@getIndex']);
+    Route::post('setting', ['as' => 'setting.post', 'uses' => 'SettingController@postIndex']);
 });
 
