@@ -55,6 +55,14 @@
                             <input type="text" class="form-control" name="description" value="{{  $photo->description ?? '' }}" >
                         </div>
                         <div class="form-group">
+                            <label for="#">Showroom ID</label>
+                            <select class="form-control" name="showroom_id">
+                                @foreach($showrooms as $showroom)
+                                    <option value="{{ $showroom->id }}" {{ isset($photo) && ($photo->id == $showroom->id) ? 'selected' : '' }}>{{ $showroom->title }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="#">Order</label>
                             <input type="number" class="form-control" name="order" value="{{  $photo->order ?? '' }}" >
                         </div>

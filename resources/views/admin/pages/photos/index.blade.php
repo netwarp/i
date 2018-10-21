@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <a href="{{ action('Admin\PhotosController@create') }}" class="btn btn-success"><i class="fa fa-plus-circle"></i> &nbsp; Create new photo</a>
+                    <a href="{{ action('Admin\PhotosController@create') }}" class="btn btn-success {{ ! $showrooms_count ? 'disabled' : '' }}"><i class="fa fa-plus-circle"></i> &nbsp; Create new photo</a>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -25,6 +25,7 @@
                                 <td>Title</td>
                                 <td>Description</td>
                                 <td>Order</td>
+                                <td>Showroom_id</td>
                                 <td>Action</td>
                             </tr>
                         </thead>
@@ -36,6 +37,7 @@
                                     <td>{{ $photo->title }}</td>
                                     <td>{{ $photo->description }}</td>
                                     <td>{{ $photo->order }}</td>
+                                    <td>{{ $photo->showroom_id }}</td>
                                     <td style="display: flex;">
                                         <a href="{{ action('Admin\PhotosController@edit', $photo->id) }}" class="btn btn-primary" style="margin-right: 1rem;"><i class="fa fa-edit"></i> Edit</a>
                                         <form action="{{ action('Admin\PhotosController@destroy', $photo->id) }}" method="post">

@@ -95,7 +95,7 @@
                         <img class="card-img-top img-fluid" src="/images/sylvain.png" alt="Card image cap">
                         <div class="card-block">
                             <div><strong>Sylvain Chavry</strong><br> Owner</div>
-                            <div>schavry@googlemail.com</div>
+                            <div>schavry@gmail.com</div>
                             <div>+33 6 99 16 24 24</div>
                         </div>
                     </div>

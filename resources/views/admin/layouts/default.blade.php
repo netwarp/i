@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/sb-admin.min.css">
         <title>Admin</title>
+        @stack('css')
     </head>
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="background: #212121 !important;">
@@ -22,6 +23,12 @@
                         <a class="nav-link" href="/admin">
                             <i class="fa fa-fw fa-dashboard"></i>
                             <span class="nav-link-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Showrooms">
+                        <a class="nav-link" href="{{ action('Admin\ShowroomsController@index') }}">
+                            <i class="fa fa-fw fa-building"></i>
+                            <span class="nav-link-text">Showrooms</span>
                         </a>
                     </li>
                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Photos">
@@ -55,6 +62,13 @@
             </div>
         </nav>
         <div class="content-wrapper">
+            @if(session('success'))
+                <div class="container-fluid">
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                </div>
+            @endif
             <div class="container-fluid">
                 @yield('content')
             </div>
@@ -67,5 +81,6 @@
             </footer>
         </div>
         <script src="/js/sb-admin.min.js"></script>
+        @stack('js')
     </body>
 </html>

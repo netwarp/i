@@ -17,9 +17,11 @@ class PhotosController extends Controller
      */
     public function index()
     {
+        $showrooms_count = DB::table('showrooms')->count();
+
         $photos = DB::table('photos')->get();
 
-        return view('admin.pages.photos.index', compact('photos'));
+        return view('admin.pages.photos.index', compact('photos', 'showrooms_count'));
     }
 
     /**
@@ -29,7 +31,9 @@ class PhotosController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.photos.form');
+        $showrooms = DB::table('showrooms')->select('id', 'title')->get();
+
+        return view('admin.pages.photos.form', compact('showrooms'));
     }
 
     /**
@@ -44,7 +48,8 @@ class PhotosController extends Controller
             'title' => 'required|unique:photos',
             'description' => 'required',
             'order' => 'required',
-            'file' => 'required|max:2000'
+            'showroom_id' => 'required',
+            'file' => 'required|max:2000',
         ]);
 
         $file = $request->file('file');
@@ -59,6 +64,7 @@ class PhotosController extends Controller
             'title' => $request->get('title'),
             'description' => $request->get('description'),
             'order' => $request->get('order'),
+            'showroom_id' => $request->get('showroom_id'),
             'path' => $file_name
         ]);
 
@@ -85,8 +91,9 @@ class PhotosController extends Controller
     public function edit($id)
     {
         $photo = DB::table('photos')->where('id', $id)->first();
+        $showrooms = DB::table('showrooms')->select('id', 'title')->get();
 
-        return view('admin.pages.photos.form', compact('photo'));
+        return view('admin.pages.photos.form', compact('photo', 'showrooms'));
     }
 
     /**
@@ -120,7 +127,7 @@ class PhotosController extends Controller
 
         DB::table('photos')->where('id', $id)->limit(1)->update($data);
 
-        return redirect()->action('Admin\PhotosController@index')->with('success', 'Photo successfully created');
+        return redirect()->action('Admin\PhotosController@index')->with('success', 'Photo successfully updated');
     }
 
     /**

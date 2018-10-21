@@ -11,7 +11,8 @@ class AdminController extends Controller
     public function getIndex() {
         $photos_count = DB::table('photos')->count();
         $videos_count = DB::table('videos')->count();
+        $showrooms_count = DB::table('showrooms')->count();
 
-        return view('admin.pages.index', compact('photos_count', 'videos_count'));
+        return view('admin.pages.index', compact('photos_count', 'videos_count', 'showrooms_count'));
     }
 }
