@@ -7,6 +7,7 @@ use DB;
 use Auth;
 use File;
 use Response;
+use App\Models\Showroom;
 
 class FrontController extends Controller
 {
@@ -14,7 +15,9 @@ class FrontController extends Controller
         $photos = DB::table('photos')->orderBy('order')->get();
         $videos = DB::table('videos')->get();
 
-        return view('front.index', compact('photos', 'videos'));
+        $showrooms = Showroom::all();
+
+        return view('front.index', compact('photos', 'videos', 'showrooms'));
     }
 
     public function getLogin() {

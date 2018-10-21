@@ -5,7 +5,7 @@
 	--red: #e74c3c;
 	--silver: #bdc3c7;
 	--main-color: #2c3e50;
-	--cloud: #ecf0f1;
+	--cloud: #f7fbfc;
 }
 
 body {
@@ -30,15 +30,6 @@ header {
 	box-shadow: 1px 1px 1px #999;
 }
 
-h2, h3 {
-	color: var(--main-color) !important;
-}
-
-h2 {
-	font-weight: lighter !important;
-	padding-top: 30px;
-}
-
 header a {
 	font-size: 20px;
 	color: var(--main-color);
@@ -51,6 +42,11 @@ header a:hover {
 	transition: 0.4s ease all;
 }
 
+.sub-title-1 {
+	margin: 2rem 0;
+	font-size: 1.4rem;
+}
+
 .card {
 	margin: 20px 0;
 }
@@ -58,31 +54,64 @@ header a:hover {
 #section1 {
 	background: url('../images/landing.JPEG') no-repeat center;
 	background-size: cover;
-	height: 600px;
-	margin-bottom: 80px;
+	height: 100vh;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	padding-top: 6rem;
+	box-sizing: border-box;
 }
 
 #section1 h1 {
-	padding: 60px;
+	padding: 2rem;
+	color: var(--main-color);
+	font-weight: bolder;
 }
 
-#offres .card {
-	
+#section1 .card {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 2rem;
+	transition: .4s ease all;
 }
 
-#videos {
-	margin-top: 100px;
+#section1 .button {
+	background: var(--main-color);
+	display: inline-block;
+	padding: 1.1rem 1.7rem;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 2rem;
+	font-size: 1.6rem;
+	border-radius: 4px;
+	transition: .4s ease all;
+}
+
+#section1 .button:hover {
+	background: var(--blue);
+	transition: .4s ease all;
+}
+
+.block-title {
+	background: #fff;
+}
+
+.block-title .title {
+	text-align: center;
+	font-size: 3rem;
+	padding: 2rem 0;
+	color: var(--main-color);
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#section2 {
+	background: var(--cloud);
 }
 
 #team {
 	background: var(--cloud);
-	margin-top: 150px;
-	padding-top: 40px;
 }
 
 #team .row {
@@ -93,8 +122,9 @@ header a:hover {
 	width: 750px;
 }
 
-#contact {
-	padding: 40px;
+#info {
+	padding: 1rem 0;
+	color: var(--main-color);
 }
 
 footer {

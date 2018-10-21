@@ -15,77 +15,75 @@
                 <a href="/"><img src="./images/logo.PNG" alt="logo"></a>
             </div>
             <nav class="nav">
-                <a class="nav-link" data-scroll href="">The Place</a>
-                <a class="nav-link" data-scroll href="#photos">Photos</a>
-                <a class="nav-link" data-scroll href="#videos">Videos</a>
+                <a class="nav-link" data-scroll href="#showrooms">Showrooms</a>
                 <a class="nav-link" data-scroll href="#team">Contact</a>
             </nav>
         </header>
     </div>
     <section id="section1">
-
-    </section>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="card" style="padding: 2rem;">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h1 class="h2">Luxury showroom located in Paris prestigious Place Vendôme.</h1>
-                        </div>
-                        <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
-                        <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
-                        <p>The high ceilings and the domotique Lutron & Deltalight lighting systems will sublimate your fashion shows & collections.</p>
-                    </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h1 class="h2">Luxury showroom located in Paris prestigious Place Vendôme.</h1>
                 </div>
+                <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
+                <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
+                <p>The high ceilings and the domotique Lutron &amp; Deltalight lighting systems will sublimate your fashion shows &amp; collections.</p>
+                <a class="nav-link button" data-scroll href="#showrooms">
+                    Showrooms
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section id="photos">
-        <div class="text-center">
-            <h2 class="h1">Photos</h2>
+    <section id="section2">
+        <div class="block-title" id="showrooms">
+            <h2 class="title">Showrooms</h2>
         </div>
         <div class="container">
             <div class="row">
-                @forelse($photos as $photo)
-                    <div class="col-md-3 col-sm-12">
-                        <div class="card">
+                <div class="col-md-12 text-center">
+                    @foreach($showrooms as $showroom)
+                        <div class="card" style="padding: 2rem;">
                             <div class="card-body">
-                                <a href="/file/{{ $photo->path }}" data-lightbox="image-1" data-title="">
-                                    <img class="card-img-top img-fluid" width="100%" src="/file/{{ $photo->path }}" alt="{{ $photo->path }}">
-                                </a>
+                                <div class="card-title">
+                                    <h1 class="h2">{{ $showroom->title }}.</h1>
+                                </div>
+                                <div>
+                                    {!! nl2br(e($showroom->description)) !!}
+                                    <h2 class="sub-title-1">Photos</h2>
+                                    <div class="row">
+                                        @forelse($showroom->photos as $photo)
+                                            <div class="col-md-3 col-sm-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <a href="/file/{{ $photo->path }}" data-lightbox="image-1" data-title="">
+                                                            <img class="card-img-top img-fluid" width="100%" src="/file/{{ $photo->path }}" alt="{{ $photo->path }}">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @empty
+                                            <div class="col-md-12 text-center">
+                                                No photo yet
+                                            </div>
+                                        @endforelse
+                                    </div>
+                                    <div class="row">
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @empty
-                    <div class="col-md-12 text-center">
-                        No photo yet
-                    </div>
-                @endforelse
+                    @endforeach
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="videos">
-        <div class="text-center">
-            <h2 class="h1">Videos</h2>
-        </div>
-
-        <div class="text-center">
-            @forelse($videos as $video)
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ $video->video_id }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            @empty
-                No video yet
-            @endforelse
-        </div>
-    </section>
-
-
     <section id="team">
-        <div class="text-center">
-            <h2 class="h1">Contact</h2>
+        <div class="block-title" id="contact">
+            <h2 class="title">Contact</h2>
         </div>
         <div class="container">
             <div class="row">
@@ -115,7 +113,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="info">
         <div class="text-center">
             <div class="h4">16 Place Vendôme</div>
             <div class="h4">75001 Paris</div>
@@ -123,10 +121,8 @@
     </section>
 
     <footer>
-        <a class="nav-link" href="#section1">The Place</a>
-        <a class="nav-link" href="#photos">Photos</a>
-        <a class="nav-link" href="#videos">Vidéos</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" data-scroll href="#showrooms">Showrooms</a>
+        <a class="nav-link" data-scroll href="#contact">Contact</a>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

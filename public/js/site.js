@@ -6,7 +6,7 @@ window.sr = ScrollReveal({
 sr.reveal('h2');
 sr.reveal('.card');
 
-var scroll = new SmoothScroll('nav a[href*="#"]', {
+var scroll = new SmoothScroll('nav a[href*="#"], footer a[href*="#"], a.button', {
 	speed: 800,
 	offset: 150
 });
