@@ -73,7 +73,7 @@
                                         @forelse($showroom->videos as $video)
                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ $video->video_id }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                                         @empty
-                                            
+
                                         @endforelse
                                     </div>
                                 </div>

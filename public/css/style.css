@@ -54,7 +54,7 @@ header a:hover {
 #section1 {
 	background: url('../images/landing.JPEG') no-repeat center;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 
 	display: flex;
 	justify-content: center;
