@@ -27,7 +27,8 @@ class VideosController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.videos.form');
+        $showrooms = DB::table('showrooms')->select('id', 'title')->get();
+        return view('admin.pages.videos.form', compact('showrooms'));
     }
 
     /**
@@ -39,7 +40,8 @@ class VideosController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'link' => 'required'
+            'link' => 'required',
+            'showroom_id' => 'required',
         ]);
 
         function getIdFromLink($string) {
@@ -55,7 +57,8 @@ class VideosController extends Controller
 
         DB::table('videos')->insert([
             'link' => $request->get('link'),
-            'video_id' => getIdFromLink($request->get('link'))
+            'video_id' => getIdFromLink($request->get('link')),
+            'showroom_id' => $request->get('showroom_id'),
         ]);
 
         return redirect()->action('Admin\VideosController@index')->with('success', 'Video created');

@@ -11,4 +11,8 @@ class Showroom extends Model
     public function photos() {
         return $this->hasMany('App\Models\Photo');
     }
+
+    public function videos() {
+        return $this->hasMany('App\Models\Video');
+    }
 }

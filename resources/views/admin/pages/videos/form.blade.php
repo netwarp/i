@@ -50,6 +50,14 @@
                             <label for="#">Source</label>
                             <input type="text" class="form-control" autofocus name="link" value="{{  $video->link ?? '' }}" >
                         </div>
+                        <div class="form-group">
+                            <label for="#">Showroom ID</label>
+                            <select class="form-control" name="showroom_id">
+                                @foreach($showrooms as $showroom)
+                                    <option value="{{ $showroom->id }}" {{ isset($video) && ($video->id == $showroom->id) ? 'selected' : '' }}>{{ $showroom->title }}</option>
+                                @endforeach
+                            </select>
+                        </div>
                         <div class="form-goup">
                             <button type="submit" class="btn btn-success">Send</button>
                         </div>
