@@ -24,7 +24,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-title">
-                    <h1 class="h2">Luxury showroom located in Paris prestigious Place Vendôme.</h1>
+                    <h1 class="h2">Luxury showrooms located in Paris prestigious Place Vendôme.</h1>
                 </div>
                 <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
                 <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
