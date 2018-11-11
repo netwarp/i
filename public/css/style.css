@@ -56,6 +56,10 @@ header a:hover {
 	background-size: cover;
 	min-height: 100vh;
 
+	
+}
+
+#section1-1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,32 +68,15 @@ header a:hover {
 	box-sizing: border-box;
 }
 
-#section1 h1 {
+#section1-1 h1 {
 	padding: 2rem;
 	color: var(--main-color);
 	font-weight: bolder;
 }
 
-#section1 .card {
+#section1-1 .card {
 	background: rgba(255, 255, 255, 0.9);
 	padding: 2rem;
-	transition: .4s ease all;
-}
-
-#section1 .button {
-	background: var(--main-color);
-	display: inline-block;
-	padding: 1.1rem 1.7rem;
-	color: #fff;
-	cursor: pointer;
-	margin-top: 2rem;
-	font-size: 1.6rem;
-	border-radius: 4px;
-	transition: .4s ease all;
-}
-
-#section1 .button:hover {
-	background: var(--blue);
 	transition: .4s ease all;
 }
 

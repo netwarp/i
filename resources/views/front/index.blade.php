@@ -21,6 +21,10 @@
         </header>
     </div>
     <section id="section1">
+        
+    </section>
+
+    <section id="section1-1">
         <div class="card">
             <div class="card-body">
                 <div class="card-title">
@@ -29,9 +33,6 @@
                 <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
                 <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
                 <p>The high ceilings and the domotique Lutron &amp; Deltalight lighting systems will sublimate your fashion shows &amp; collections.</p>
-                <a class="nav-link button" data-scroll href="#showrooms">
-                    Showrooms
-                </a>
             </div>
         </div>
     </section>
