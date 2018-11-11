@@ -1,6 +1,6 @@
 if (window.matchMedia("(min-width: 700px)").matches) {
     window.sr = ScrollReveal({
-        reset: true,
+        reset: false,
         origin: 'bottom',
         duration: 500,
     });
