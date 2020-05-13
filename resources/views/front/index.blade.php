@@ -28,11 +28,15 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-title">
-                    <h1 class="h2">Luxury showrooms located in Paris prestigious Place Vendôme.</h1>
+                    <h1 class="h2">Looking to rent a showroom for your events in Paris</h1>
                 </div>
-                <p>Impress your clients and invite them in the heart of Paris fashion district for your business meetings or fashion shows. </p>
-                <p>The interiors are contemporary in style with a well proportioned open plan providing the perfect location from which to explore this exciting neighborhood and the world beyond.</p>
-                <p>The high ceilings and the domotique Lutron &amp; Deltalight lighting systems will sublimate your fashion shows &amp; collections.</p>
+                <p>Product launching ?</p>
+                <p>In the Vendome area</p>
+                <p>The most beautiful and fashionable  area in Paris with no doubt.</p>
+                <p>
+                    For years now, we manage many spaces locaded in Vendôme district, without doubt the most beautiful area in Paris.
+                    <br> From Saint Honoré to Place Vendome, these differents spots will be the perfect spaces to host your VIP clients and to plan your events.
+                </p>
             </div>
         </div>
     </section>
