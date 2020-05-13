@@ -108,6 +108,7 @@ class PhotosController extends Controller
         $data = [
             'title' => $request->get('title'),
             'description' => $request->get('description'),
+            'showroom_id' => $request->get('showroom_id'),
             'order' => $request->get('order'),
         ];
 
