@@ -9,7 +9,7 @@ class Showroom extends Model
     protected $table = 'showrooms';
 
     public function photos() {
-        return $this->hasMany('App\Models\Photo');
+        return $this->hasMany('App\Models\Photo')->orderBy('order', 'asc');
     }
 
     public function videos() {
